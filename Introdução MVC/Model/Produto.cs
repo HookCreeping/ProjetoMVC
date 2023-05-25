@@ -73,7 +73,7 @@ namespace Introdução_MVC.Model
         }
 
         // método para inserir um produto na linha do csv
-        public void inserir(Produto p)
+        public void Inserir(Produto p)
         {
             // array que armazena as linhas obtidas pelo método PrepararLinhasCSV
             string[] linhas = { PrepararLinhasCSV(p) };
