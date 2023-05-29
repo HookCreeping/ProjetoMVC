@@ -18,7 +18,6 @@ namespace Introdução_MVC.View
                 Console.WriteLine($"Text {item.Preco:C}");
             }
         }
-
         public Produto Cadastrar()
         {
             Produto novoProduto = new Produto();

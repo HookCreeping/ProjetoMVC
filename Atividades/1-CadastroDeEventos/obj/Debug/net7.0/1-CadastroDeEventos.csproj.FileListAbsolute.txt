@@ -1,0 +1,15 @@
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.csproj.AssemblyReference.cache
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.AssemblyInfoInputs.cache
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.AssemblyInfo.cs
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.csproj.CoreCompileInputs.cache
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\bin\Debug\net7.0\1-CadastroDeEventos.exe
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\bin\Debug\net7.0\1-CadastroDeEventos.deps.json
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\bin\Debug\net7.0\1-CadastroDeEventos.runtimeconfig.json
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\bin\Debug\net7.0\1-CadastroDeEventos.dll
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\bin\Debug\net7.0\1-CadastroDeEventos.pdb
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.dll
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\refint\1-CadastroDeEventos.dll
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.pdb
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\1-CadastroDeEventos.genruntimeconfig.cache
+C:\Users\54454818835\Desktop\ProjetoMVC\Atividades\1-CadastroDeEventos\obj\Debug\net7.0\ref\1-CadastroDeEventos.dll
