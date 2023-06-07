@@ -77,6 +77,73 @@ namespace GamerTarde.Controllers
             return LocalRedirect("~/Equipe/Listar");
         }
 
+        [Route("Excluir/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            Equipe e = c.Equipe!.First(e => e.IdEquipe == id);
+
+            c.Equipe!.Remove(e);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            Equipe e = c.Equipe!.First(e => e.IdEquipe == id);
+
+            ViewBag.Equipe = e;
+
+            return View("/Views/Equipe/Edit.cshtml");
+        }
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        { 
+            Equipe novaEquipe = new Equipe();
+            novaEquipe.Nome = form["Nome"].ToString();
+            novaEquipe.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            // upload da imagem da equipe nova/atualizada
+            if (form.Files.Count > 0)
+            {
+                var file = form.Files[0];
+
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                var path = Path.Combine(folder, file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                novaEquipe.Imagem = file.FileName;
+            }
+            else
+            {
+                novaEquipe.Imagem = "padrao.png";
+            }
+
+            Equipe equipe = c.Equipe!.First(x => x.IdEquipe == novaEquipe.IdEquipe);
+
+            equipe.Nome = novaEquipe.Nome;
+            equipe.Imagem = novaEquipe.Imagem;
+
+            c.Equipe!.Update(equipe);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\54454818835\\Desktop\\GamerTarde\\GamerTarde.csproj": {}
+    "C:\\Users\\54454818835\\Desktop\\ProjetoMVC\\GamerTarde\\GamerTarde.csproj": {}
   },
   "projects": {
-    "C:\\Users\\54454818835\\Desktop\\GamerTarde\\GamerTarde.csproj": {
+    "C:\\Users\\54454818835\\Desktop\\ProjetoMVC\\GamerTarde\\GamerTarde.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\54454818835\\Desktop\\GamerTarde\\GamerTarde.csproj",
+        "projectUniqueName": "C:\\Users\\54454818835\\Desktop\\ProjetoMVC\\GamerTarde\\GamerTarde.csproj",
         "projectName": "GamerTarde",
-        "projectPath": "C:\\Users\\54454818835\\Desktop\\GamerTarde\\GamerTarde.csproj",
+        "projectPath": "C:\\Users\\54454818835\\Desktop\\ProjetoMVC\\GamerTarde\\GamerTarde.csproj",
         "packagesPath": "C:\\Users\\54454818835\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\54454818835\\Desktop\\GamerTarde\\obj\\",
+        "outputPath": "C:\\Users\\54454818835\\Desktop\\ProjetoMVC\\GamerTarde\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\54454818835\\AppData\\Roaming\\NuGet\\NuGet.Config",

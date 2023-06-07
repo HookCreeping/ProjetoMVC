@@ -4,11 +4,10 @@
     ViewData["Title"] = "Equipe";
 }
 
-<form method="file" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+<form method='post' action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
-    x
     <input type="text" name="Nome" required>
-    <input type="text" name="Imagem" required>
+    <input type="file" name="Imagem">
 
     <label for="">Imagem</label>
     <button type="submit">Cadastrar</button>
@@ -22,6 +21,7 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Imagem</th>
+        <th>Ação</th>
     </thead>
     <tbody>
 
@@ -33,7 +33,15 @@
             <tr>
                 <td>@equipe.IdEquipe</td>
                 <td>@equipe.Nome</td>
-                <td>@equipe.Imagem</td>
+                <td>
+                    <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
+                </td>
+                <td>
+                    <a asp-area="Excluir item" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                </td>
+                <td>
+                    <a asp-area="Editar item" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
+                </td>
             </tr>
         }
     </tbody>
