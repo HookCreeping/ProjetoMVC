@@ -1,0 +1,37 @@
+@model Equipe
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<link rel="stylesheet" href="~/css/equipes.css">
+
+
+<main>
+    <section class="container-grid cadastro-equipes">
+        @if (ViewBag.UserName == null)
+        {
+            <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+        }
+        else
+        {
+
+            <form class="frm-cad-equipe" method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
+
+                <div class="cadequipe-titulo">
+                    <h1>Editar Equipes</h1>
+                    <hr>
+                </div>
+
+                <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
+
+                <input type="text" name="Nome" value="@ViewBag.Equipe.Nome" class="campo-entrada"
+                    placeholder="Digite o nome da sua equipe:" required>
+
+                <label class="foto" for="foto-file">
+                    <input name="Imagem" type="file" id="foto-file">
+                </label>
+                <button type="submit">Atualizar</button>
+
+            </form>
+        }
